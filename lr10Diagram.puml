@@ -1,0 +1,41 @@
+@startuml
+
+abstract class HouseholdAppliance {
+    -enabled : boolean
+    +HouseholdAppliance()
+    +ssEnabled() : boolean
+    +enable() : void
+    +turnOff() : void
+    +abstract switching() : void
+}
+
+class SmoothingIron{
+    -temperature : int
+    +SmoothingIron()
+    +getTemperature() : int
+    +setTemperature(&temperature : int) : void
+    +override switching() : void
+}
+
+class TV {
+    -channel : int
+    +TV()
+    +getChannel() : int
+    +setChannel(&channel : int) : void
+    +override switching() : void
+}
+
+class Refrigerator{
+    -temperature : int
+    +SmoothingIron()
+    +getTemperature() : int
+    +setTemperature(&temperature : int) : void
+    +override switching() : void
+}
+
+HouseholdAppliance --> SmoothingIron
+HouseholdAppliance --> TV
+HouseholdAppliance --> Refrigerator
+
+
+@enduml

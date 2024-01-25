@@ -25,6 +25,6 @@ public class SmoothingIron extends HouseholdAppliance{//Праска
             return;
         }
         enable();
-        System.out.println("Праска перемикнута. Температура: " + temperature);
+        System.out.println("Праска вимкнута!!!");
     }
 }

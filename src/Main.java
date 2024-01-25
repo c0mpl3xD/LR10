@@ -22,8 +22,16 @@ public class Main {
         appliance[1] = new TV();
         appliance[2] = new Refrigerator();
 
+        //Перемикання з включеним побутовим приладом
         for (int i = 0; i < appliance.length; i++) {
             appliance[i].enable();
+            appliance[i].switching();
+            appliance[i].turnOff();
+            System.out.println();
+        }
+
+        //Перемикання з вимкненим побутовим приладом
+        for (int i = 0; i < appliance.length; i++) {
             appliance[i].switching();
             appliance[i].turnOff();
             System.out.println();

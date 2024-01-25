@@ -24,7 +24,6 @@ public class TV extends HouseholdAppliance{//Телевізор
             System.out.println("Телевізор перемикнутий на канал №" + channel);
             return;
         }
-        enable();
-        System.out.println("Телевізор перемикнутий на канал №" + channel);
+        System.out.println("Телевізор вимкутий!!!");
     }
 }

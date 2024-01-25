@@ -23,7 +23,6 @@ public class Refrigerator extends HouseholdAppliance{//Холодильник
             System.out.println("Холодильник перемикнутий. Температура: " + temperature);
             return;
         }
-        enable();
-        System.out.println("Холодильник перемикнутий. Температура: " + temperature);
+        System.out.println("Холодильник вимкнутий!!!");
     }
 }
